@@ -41,8 +41,9 @@ header {
 }
 
 .main-image {
-    max-width: 100%;
+    max-width: 100%; /* Ensure the image fits the container */
     height: auto;
+    display: block; /* Remove extra spacing below image */
 }
 
 #articles {
