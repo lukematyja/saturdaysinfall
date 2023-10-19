@@ -12,8 +12,10 @@ body {
 header {
     text-align: center;
     background-color: #007BFF;
-    color: #000; /* Change the text color to black */
+    color: #fff;
     padding: 20px 0;
+    position: relative; /* Add position relative */
+    z-index: 1; /* Set a z-index to ensure the header is above other elements */
 }
 
 .title {
@@ -31,6 +33,7 @@ header {
     text-align: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px; /* Add margin to push the main section down */
 }
 
 .content-container {
