@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Changed to min-height to ensure it expands properly */
+    min-height: 100vh;
     background-color: #f0f0f0;
     flex-direction: column; /* To stack header, main, and footer vertically */
 }
@@ -21,7 +21,7 @@ header {
 .title {
     font-size: 36px;
     margin: 0;
-    padding-top: 20px; /* Adjust the padding to create space between header and main section */
+    padding-top: 20px;
 }
 
 .subheadline {
@@ -34,19 +34,18 @@ header {
     text-align: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    position: relative; /* Add relative positioning */
 }
 
 .main-image {
     max-width: 100%;
     height: auto;
     display: block;
+    position: absolute; /* Add absolute positioning */
+    top: 50%; /* Adjust the top positioning to center the image vertically */
+    left: 0;
+    transform: translateY(-50%); /* Center the image vertically */
 }
 
 #articles {
