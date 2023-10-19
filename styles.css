@@ -6,13 +6,14 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    flex-direction: column; /* To stack header, main, and footer vertically */
 }
 
 header {
     text-align: center;
-    padding: 20px;
     background-color: #007BFF;
     color: #fff;
+    padding: 20px 0;
 }
 
 .title {
@@ -53,6 +54,12 @@ footer {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 0;
+}
+
+.footer-links {
+    /* Center the links horizontally */
+    display: flex;
+    justify-content: center;
 }
 
 footer a {
