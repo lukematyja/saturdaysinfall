@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Changed to min-height to ensure it expands properly */
     background-color: #f0f0f0;
     flex-direction: column; /* To stack header, main, and footer vertically */
 }
@@ -14,13 +14,14 @@ header {
     background-color: #007BFF;
     color: #fff;
     padding: 20px 0;
-    position: relative; /* Add position relative */
-    z-index: 1; /* Set a z-index to ensure the header is above other elements */
+    position: relative;
+    z-index: 1;
 }
 
 .title {
     font-size: 36px;
     margin: 0;
+    padding-top: 20px; /* Adjust the padding to create space between header and main section */
 }
 
 .subheadline {
@@ -33,7 +34,6 @@ header {
     text-align: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px; /* Add margin to push the main section down */
 }
 
 .content-container {
@@ -44,9 +44,9 @@ header {
 }
 
 .main-image {
-    max-width: 100%; /* Ensure the image fits the container */
+    max-width: 100%;
     height: auto;
-    display: block; /* Remove extra spacing below image */
+    display: block;
 }
 
 #articles {
@@ -62,7 +62,7 @@ footer {
 
 .footer-links {
     display: flex;
-    justify-content: center; /* Center the links horizontally */
+    justify-content: center;
 }
 
 footer a {
