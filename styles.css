@@ -57,9 +57,8 @@ footer {
 }
 
 .footer-links {
-    /* Center the links horizontally */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the links horizontally */
 }
 
 footer a {
