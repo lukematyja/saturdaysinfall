@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <style>
+    body {
+        background: url("{{ url_for('static', filename='img/trophy.jpg') }}");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-attachment: fixed;
+        background-color: #000;
+        -webkit-background-size: 60%;
+        -moz-background-size: 60%;
+        background-size: auto 60%;
+        -o-background-size: 60%;
+    }
+    </style>
+
+    <main class="container">
+        <div class="box col-xs-12 col-md-8">
+            <h1>My Leagues</h1>
+            <div class="table-responsive">
+                <table class="table table-bordered sif-table">
+                    <thead>
+                        <tr>
+                            <th>League</th>
+                            <th>Standings</th>
+                            <th>My Picks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for row in leagues %}
+                        <tr>
+                            <td>{{ row.league_name }}</td>
+                            <td>
+                                <form method="GET" action="/standings/{{ row.league_id }}">
+                                    <button class="btn btn-info btn-sm btn-block" type="submit">View</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form method="GET" action="/picks/{{ row.league_id }}">
+                                    <button class="btn btn-danger btn-sm btn-block" type="submit">View</button>
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
