@@ -34,18 +34,14 @@ header {
     text-align: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    height: 400px; /* Adjust the height as needed */
     position: relative; /* Add relative positioning */
 }
 
 .main-image {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure the image fits the container width */
+    height: 100%; /* Set the height to 100% of the main section */
     display: block;
-    position: absolute; /* Add absolute positioning */
-    top: 50%; /* Adjust the top positioning to center the image vertically */
-    left: 0;
-    transform: translateY(-50%); /* Center the image vertically */
 }
 
 #articles {
