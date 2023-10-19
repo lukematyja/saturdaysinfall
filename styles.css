@@ -12,7 +12,7 @@ body {
 header {
     text-align: center;
     background-color: #007BFF;
-    color: #fff;
+    color: #000; /* Change the text color to black */
     padding: 20px 0;
 }
 
