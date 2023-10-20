@@ -63,6 +63,11 @@ footer {
     justify-content: center;
 }
 
+/* Remove the "About" link styling */
+footer a:nth-child(3) {
+    display: none; /* This hides the third link (About) */
+}
+
 footer a {
     text-decoration: none;
     color: #fff;
