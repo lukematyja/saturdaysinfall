@@ -34,13 +34,14 @@ header {
     text-align: center;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 400px; /* Adjust the height as needed */
+    min-height: 400px; /* Set a minimum height to ensure space for the image */
     position: relative; /* Add relative positioning */
 }
 
 .main-image {
-    max-width: 100%; /* Ensure the image fits the container width */
-    height: 100%; /* Set the height to 100% of the main section */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
     display: block;
 }
 
@@ -54,7 +55,7 @@ footer {
     color: #fff;
     padding: 10px 0;
     position: relative;
-    z-index: 2; /* Increase the z-index to make sure it's above the image */
+    z-index: 2;
 }
 
 .footer-links {
