@@ -53,6 +53,8 @@ footer {
     background-color: #007BFF;
     color: #fff;
     padding: 10px 0;
+    position: relative;
+    z-index: 2; /* Increase the z-index to make sure it's above the image */
 }
 
 .footer-links {
